@@ -1,0 +1,8 @@
+@use "sass:math";
+$mobile: 375px;
+
+@mixin responsive($breakpoint) {
+  @media (max-width: calc(($breakpoint / 16px) * 1em)) {
+    @content;
+  }
+}
